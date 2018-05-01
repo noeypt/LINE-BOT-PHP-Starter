@@ -22,7 +22,8 @@
     function purchase(){
       alert('purchase completed');
       fbq('track', 'Purchase', {
-          value: 123,
+        value: 123,
+        currency: 'JPY',
       });
     }
   </script>

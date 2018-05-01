@@ -17,8 +17,20 @@
     src="https://www.facebook.com/tr?id=801226376735571&ev=PageView&noscript=1"
   /></noscript>
   <!-- End Facebook Pixel Code -->
+
+  <script>
+    function purchase(){
+      alert('purchase completed');
+      fbq('track', 'Purchase', {
+          value: 123,
+      });
+    }
+  </script>
+
 </head>
 <body>
 Hello world
+<br/>
+<input id="purchaseBtn" onclick="purchase();" type="button" value="Purchase" />
 </body>
 </html>
